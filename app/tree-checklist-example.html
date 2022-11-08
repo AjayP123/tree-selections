@@ -9,20 +9,20 @@
       class="checklist-leaf-node"
       [checked]="checklistSelection.isSelected(node)"
       (change)="todoLeafItemSelectionToggle(node)"
-      >{{node.item}}</mat-checkbox
+      >{{node.groupName}}</mat-checkbox
     >
   </mat-tree-node>
-
+  <!-- 
   <mat-tree-node
     *matTreeNodeDef="let node; when: hasNoContent"
     matTreeNodePadding
   >
     <button mat-icon-button disabled></button>
     <mat-form-field>
-      <input matInput #itemValue placeholder="New item..." />
+      <input matInput #itemValue placeholder="New groupName..." />
     </mat-form-field>
     <button mat-button (click)="saveNode(node, itemValue.value)">Save</button>
-  </mat-tree-node>
+  </mat-tree-node> -->
 
   <mat-tree-node *matTreeNodeDef="let node; when: hasChild" matTreeNodePadding>
     <button
@@ -38,9 +38,8 @@
       [checked]="descendantsAllSelected(node)"
       [indeterminate]="descendantsPartiallySelected(node)"
       (change)="todoItemSelectionToggle(node)"
-      >{{node.item}}</mat-checkbox
+      >{{node.groupName}}</mat-checkbox
     >
-    <!-- <button mat-icon-button (click)="addNewItem(node)"><mat-icon>add</mat-icon></button> -->
   </mat-tree-node>
 </mat-tree>
 
