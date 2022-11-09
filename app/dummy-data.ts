@@ -3,17 +3,23 @@ export const VEHILE_DATA = {
     {
       id: '1',
       groupName: 'johngroup',
-      SearchMatched: false,
+      searchMatched: false,
       subGroups: [
         {
           id: '1.0',
           groupName: 'johngroup_1.0',
-          SearchMatched: false,
+          searchMatched: false,
           subGroups: [
             {
               id: '1.0.1',
               groupName: 'johngroup_1.1',
-              SearchMatched: false,
+              searchMatched: false,
+              subGroups: undefined,
+            },
+            {
+              id: '1.0.2',
+              groupName: 'johngroup_1.2',
+              searchMatched: false,
               subGroups: undefined,
             },
           ],
@@ -21,13 +27,13 @@ export const VEHILE_DATA = {
         {
           id: '2.0',
           groupName: 'johngroup_2.0',
-          SearchMatched: false,
+          searchMatched: false,
           subGroups: undefined,
         },
         {
           id: '3.0',
           groupName: 'johngroup_3.0',
-          SearchMatched: false,
+          searchMatched: false,
           subGroups: undefined,
         },
       ],
@@ -35,36 +41,36 @@ export const VEHILE_DATA = {
     {
       id: '2',
       groupName: 'vkgroup',
-      SearchMatched: false,
+      searchMatched: false,
       subGroups: [
         {
           id: '2.0',
           groupName: 'vk_1.0',
-          SearchMatched: false,
+          searchMatched: false,
         },
       ],
     },
     {
       id: '3',
       groupName: 'rjgroup',
-      SearchMatched: false,
+      searchMatched: false,
       subGroups: [
         {
           id: '3.0',
           groupName: 'rjgroup_3.0',
-          SearchMatched: false,
+          searchMatched: false,
         },
       ],
     },
     {
       id: '4',
       groupName: 'jdgroup',
-      SearchMatched: false,
+      searchMatched: false,
       subGroups: [
         {
           id: '4.0',
           groupName: 'jdgroup_4.0',
-          SearchMatched: false,
+          searchMatched: false,
         },
       ],
     },
